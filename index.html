@@ -84,7 +84,37 @@
             <p> Project Info. </p>
           </section>
 
-       
+          <script>
+            // Function to hide all sections
+            function hideSections() {
+                const sections = document.querySelectorAll('.content-section');
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+            }
+    
+            // Function to show the selected section
+            function showSection(sectionId) {
+                hideSections();
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.style.display = 'block';
+                }
+            }
+    
+            // Set up event listeners for the navigation links
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();  // Prevent default link behavior
+                    const sectionId = link.getAttribute('data-section');
+                    showSection(sectionId);
+                });
+            });
+    
+            // Initially show the first section (Section 1)
+            showSection('home');
+        </script>
     
 
     <!-- Footer Section -->
