@@ -78,9 +78,28 @@
     </div>
 
     <div id="section2" class="content-section">
-        <h2>Porjects!</h2>
+        <h2>Projects!</h2>
         <p>This is the content for section 2. It will replace the previous section when selected.</p>
-    </div>     
+    </div>  
+    
+    <div id="section3" class="content-section">
+        <h2>Volunteering</h2>
+        <p>Volunteering is a big part of who I am and helped shape my interest throughout the years. Volunteering is a 
+            great opportunity to connect with other people in a meaningful way and I could not be more grateful for all 
+            the volunteering opportunities I partake in. A few examples of places I volunteer at are:
+        </p>
+        <ul>
+            <li>CoderDojoApex</li>
+            <ul>
+                <li>CoderDojoApex is a volunteer-led non-profit organization where I've volunteered for the past 4 years. 
+                    After initially joining CDA as a "Ninja" (student), I fell in love with the community
+                </li>
+            </ul>
+            <li>Apex Youth Council</li>
+            <li>Eva Perry Libary </li>
+            <li>Item 4</li>
+        </ul>
+    </div> 
 
     <!-- Footer Section -->
     <footer>
@@ -112,7 +131,7 @@
                 event.preventDefault();  // Prevent default link behavior
                 const sectionId = link.getAttribute('data-section');
                 showSection(sectionId);
-            });
+            });  
         });
 
         // Initially show the first section (Section 1)
